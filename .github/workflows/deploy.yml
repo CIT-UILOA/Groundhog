@@ -19,7 +19,7 @@ jobs:
       - name: build
         run: npm run build
         env:
-          BASE_PATH: /Groundhog/
+          SERVER_BASE_URL: /Groundhog/
 
       - name: create .nojekyll
         run: touch .output/public/.nojekyll
