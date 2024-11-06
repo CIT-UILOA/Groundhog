@@ -31,7 +31,7 @@ export default function About() {
           </div>
           <img
             class="w-96 h-96 object-cover justify-self-end place-self-center mr-1"
-            src="/png/jon ivan.png"
+            src="/Groundhog/png/jon ivan.png"
             alt="Portrait of Jon Ivan P Perez"
           />
           <div>
@@ -41,7 +41,7 @@ export default function About() {
           </div>
           <img
             class="w-96 h-96 object-cover justify-self-end place-self-center mr-1"
-            src="/png/me.png"
+            src="/Groundhog/png/me.png"
             alt="Portrait of Ivan Leonard O Aparte"
           />
         </div>
