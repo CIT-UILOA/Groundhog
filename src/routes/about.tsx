@@ -1,6 +1,4 @@
 export default function About() {
-  const base_path = import.meta.dev ? "/Groundhog" : "";
-
   return (
     <main class="grid lg:grid-cols-2 gap-9">
       <div>
@@ -31,7 +29,7 @@ export default function About() {
           </div>
           <img
             class="w-96 h-96 object-cover justify-self-end place-self-center mr-1"
-            src={`${base_path}/png/jon ivan.png`}
+            src="/png/jon ivan.png"
             alt="Portrait of Jon Ivan P Perez"
           />
           <div>
@@ -41,7 +39,7 @@ export default function About() {
           </div>
           <img
             class="w-96 h-96 object-cover justify-self-end place-self-center mr-1"
-            src={`${base_path}/png/me.png`}
+            src="/png/me.png"
             alt="Portrait of Ivan Leonard O Aparte"
           />
         </div>
