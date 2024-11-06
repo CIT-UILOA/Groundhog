@@ -1,25 +1,15 @@
-import { A } from "@solidjs/router";
-import Counter from "~/components/Counter";
-
 export default function Home() {
   return (
-    <main class="text-center mx-auto text-gray-700 p-4">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">Hello world!</h1>
-      <Counter />
-      <p class="mt-8">
-        Visit{" "}
-        <a href="https://solidjs.com" target="_blank" class="text-sky-600 hover:underline">
-          solidjs.com
-        </a>{" "}
-        to learn how to build Solid apps.
+    <main class="m-5">
+      <h1 class="text-9xl w-10 font-extrabold mb-12 text-outline title-layered">
+        Ground Breaking Technology
+      </h1>
+      <p class="whitespace-pre-line text-xl italic w-5/12">
+        The reasonable man adapts himself to the world: the unreasonable one
+        persists in trying to adapt the world to himself. Therefore all progress
+        depends on the unreasonable man
       </p>
-      <p class="my-4">
-        <span>Home</span>
-        {" - "}
-        <A href="/about" class="text-sky-600 hover:underline">
-          About Page
-        </A>{" "}
-      </p>
+      <p class="text-xl">—George Bernard Shaw, Man and Superman (1903)</p>
     </main>
   );
 }
