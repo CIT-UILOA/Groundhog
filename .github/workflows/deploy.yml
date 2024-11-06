@@ -1,12 +1,11 @@
 name: Build github pages
 
+permissions: write-all
+
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-  workflow_dispatch:
+    branches:
+      - main # Trigger deployment on push to the `main` branch
 
 jobs:
   build:
