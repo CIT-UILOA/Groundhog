@@ -42,7 +42,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-N1WQtHta.js",
+    "file": "assets/client-w6hFy2GA.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
