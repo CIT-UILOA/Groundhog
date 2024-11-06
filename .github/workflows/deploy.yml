@@ -1,10 +1,12 @@
-name: Build Github Pages
+name: Build github pages
 
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,13 +20,13 @@ jobs:
       - name: build
         run: npm run build
         env:
-          BASE_PATH: /my-app/
+          BASE_PATH: /Groundhog/
 
       - name: create .nojekyll
         run: touch .output/public/.nojekyll
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: deploy pages
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.output/public
+          branch: gh-pages
+          folder: .output/public
